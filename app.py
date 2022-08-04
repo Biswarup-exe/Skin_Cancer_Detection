@@ -24,8 +24,8 @@ from tensorflow.keras.preprocessing import image
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'skin_cancer_detection.h5'
-
+#MODEL_PATH = 'skin_cancer_detection.h5'
+MODEL_PATH = pyd.Daisi("skin_cancer_detection.h5")
 # Load your trained model
 #model = load_model(MODEL_PATH)
 #model._make_predict_function()          # Necessary
